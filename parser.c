@@ -115,6 +115,7 @@ void parse_file ( char * filename,
       display(s);
     }
     else if(strcmp(line,"save")==0){
+      clear_screen(s);
       draw_lines(edges,s,c);;
       fgets(line,255,f);
       line[strlen(line)-1]='\0';
